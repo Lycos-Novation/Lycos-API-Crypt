@@ -1,5 +1,7 @@
 # Lycos-API-Crypt
 
+** ## Page pour les requêtes : _https://lycos-novation.fr/preprod/chiffrer/index.php_ **
+
 ##    Comment chiffrer mon texte ?
 
 Vous devez faire une requête POST en indiquant les champs suivants :
