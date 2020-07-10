@@ -10,8 +10,8 @@ _plain_ : {texte à chiffrer}
 
 Le script vous renverra ensuite un JSON avec un hash.
 #### Exemple:
-Requête POST : {"action":"crypt", "plain":"lycos"}
-Réponse : {"hash":"24iwN\/ytBSYwSENJYbGMkcHGVw2VS7r+WFviFxRiX5fddGFp2fJLXiL1EnlYK6a0zN7IPRcbpOR4ZtNMTd5T0w=="}
+Requête POST : `{"action":"crypt", "plain":"lycos"}`
+Réponse : `{"hash":"24iwN\/ytBSYwSENJYbGMkcHGVw2VS7r+WFviFxRiX5fddGFp2fJLXiL1EnlYK6a0zN7IPRcbpOR4ZtNMTd5T0w=="}`
 
 
 
@@ -25,9 +25,9 @@ _plain_ : texte brut
 
 Le script vous renverra ensuite un JSON indiquant si les 2 éléments sont liés ou pas.
 #### Exemple:
-Requête POST : {"action":"compare", "plain":"lycos", "hash":"24iwN\/ytBSYwSENJYbGMkcHGVw2VS7r+WFviFxRiX5fddGFp2fJLXiL1EnlYK6a0zN7IPRcbpOR4ZtNMTd5T0w=="}
-Réponse : {"corresponds":"true"}
+Requête POST : `{"action":"compare", "plain":"lycos", "hash":"24iwN\/ytBSYwSENJYbGMkcHGVw2VS7r+WFviFxRiX5fddGFp2fJLXiL1EnlYK6a0zN7IPRcbpOR4ZtNMTd5T0w=="}`
+Réponse : `{"corresponds":"true"}`
 
 ##### Autre exemple : 
-Requête POST : {"action":"compare", "plain":"Lycos", "hash":"24iwN\/ytBSYwSENJYbGMkcHGVw2VS7r+WFviFxRiX5fddGFp2fJLXiL1EnlYK6a0zN7IPRcbpOR4ZtNMTd5T0w=="}
-Réponse : {"corresponds":"false"}
+Requête POST : `{"action":"compare", "plain":"Lycos", "hash":"24iwN\/ytBSYwSENJYbGMkcHGVw2VS7r+WFviFxRiX5fddGFp2fJLXiL1EnlYK6a0zN7IPRcbpOR4ZtNMTd5T0w=="}`
+Réponse : `{"corresponds":"false"}`
