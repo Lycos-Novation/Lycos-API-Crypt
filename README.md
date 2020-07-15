@@ -1,4 +1,4 @@
-[![whatisthis](https://img.shields.io/badge/Lycos--Novation's-Crypt%20and%20compare%20API-brightgreen)]
+![whatisthis](https://img.shields.io/badge/Lycos--Novation's-Crypt%20and%20compare%20API-brightgreen)
 [![chat](https://img.shields.io/discord/627946609896062986?label=Discord)](https://discord.gg/KWjptxF)
 
 # Lycos-API-Crypt
