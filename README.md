@@ -26,8 +26,8 @@ _plain_ : texte brut
 Le script vous renverra ensuite un JSON indiquant si les 2 éléments sont liés ou pas.
 #### Exemple:
 Requête POST : `{"action":"compare", "plain":"lycos", "hash":"24iwN\/ytBSYwSENJYbGMkcHGVw2VS7r+WFviFxRiX5fddGFp2fJLXiL1EnlYK6a0zN7IPRcbpOR4ZtNMTd5T0w=="}`
-Réponse : `{"corresponds":"true"}`
+Réponse : `{"corresponds":true}`
 
 ##### Autre exemple : 
 Requête POST : `{"action":"compare", "plain":"Lycos", "hash":"24iwN\/ytBSYwSENJYbGMkcHGVw2VS7r+WFviFxRiX5fddGFp2fJLXiL1EnlYK6a0zN7IPRcbpOR4ZtNMTd5T0w=="}`
-Réponse : `{"corresponds":"false"}`
+Réponse : `{"corresponds":false}`
