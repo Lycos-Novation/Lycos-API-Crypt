@@ -8,6 +8,12 @@ function chiffrer($texte){ //Fonction servant à chiffrer un texte
     if(strlen($texte)>128){
         $texte = strrev(substr(strrev($texte), (strlen($texte)-128)));
     }
+    $c = 0;
+    //On fait ça propre : la clé de chiffrement est elle même... chiffrée. en md5, 6969 tours (LOL) c'est jamais de trop.
+    while($c<6969){
+        $texte = md5($texte);
+        $c++;
+    }
     //Chiffrement du texte avec le texte répété
     $methode = "AES-256-CBC";
     $ivlen = openssl_cipher_iv_length($methode); 
@@ -25,6 +31,12 @@ function compare($hash, $texte){ //Fonction déterminant si le hash déchiffré 
     }
     if(strlen($texte)>128){
         $texte = strrev(substr(strrev($texte), (strlen($texte)-128)));
+    }
+    $c = 0;
+    //du coup on le refait ici, btw.
+    while($c<6969){
+        $texte = md5($texte);
+        $c++;
     }
     $clechiffrement = $texte;
     $c = base64_decode($hash);
